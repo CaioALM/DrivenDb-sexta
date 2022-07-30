@@ -25,7 +25,7 @@ CREATE TABLE "transactions" (
 	"bankAccountId" INTEGER NOT NULL REFERENCES "bankAccount"("id"),
 	"amount" NUMBER NOT NULL ,
 	"type" TEXT NOT NULL,
-	"time" TIMESTAMP NOT NULL DEFAULT FALSE
+	"time" TIMESTAMP NOT NULL DEFAULT now()
 );
 
 CREATE TABLE "creditCards" (
